@@ -10,7 +10,7 @@ import lombok.Setter;
 @Embeddable
 public class Coord {
    @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
+   @GeneratedValue(strategy = GenerationType.AUTO)
    private Long id;
    private double lon;
    private double lat;

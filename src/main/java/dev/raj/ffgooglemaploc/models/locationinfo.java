@@ -16,33 +16,23 @@ import java.util.List;
 public class locationinfo{
 
         @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        @GeneratedValue(strategy = GenerationType.AUTO)
         private Long id;
 
         @OneToOne(cascade = CascadeType.ALL)
         private Coord coord;
 
-        @OneToMany(cascade = CascadeType.PERSIST)
+        @OneToMany(cascade = CascadeType.ALL)
         private List<weather> weather;
-//
-//        @ManyToOne(cascade = CascadeType.PERSIST)
-//        private weather weather;
 
         private String base;
 
-
         private int visibility;
-
 
         @OneToOne(cascade = CascadeType.PERSIST)
         private Wind wind;
 
-//        @OneToOne(cascade = CascadeType.PERSIST)
-//        private Clouds clouds;
-
         private long dt;
-
-
 
         private int timezone;
 
