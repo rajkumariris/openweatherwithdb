@@ -18,7 +18,8 @@ public class locationtest {
     @Test
     public void locationtesting(){
 
-
+   // its getting null entity means it is running fine trying to fetch
+        //data but we are trying  passing no info
         locationRepository.save(locationinfo);
     }
 }
