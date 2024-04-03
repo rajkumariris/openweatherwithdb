@@ -24,7 +24,7 @@ public class openweatherService implements MapService{
     public locationdatadto getMapInformation(locationdto locationdto) {
         int pincode = locationdto.getPincode();
         String date = locationdto.getFor_date();
-      String apiKey=   "87abe92bcc6a7732bb3c74677a882e9a";
+        String apiKey=   "87abe92bcc6a7732bb3c74677a882e9a";
 
       String url = String.format("https://api.openweathermap.org/data/2.5/weather?zip=%s,us&date=%s&appid=%s", pincode, date ,apiKey);
         RestTemplate restTemplate = restTemplateBuilder.build();
